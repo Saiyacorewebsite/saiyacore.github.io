@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services – Saiyacore</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- ========== Header ========== -->
+  <header class="site-header">
+    <a href="index.html" class="brand">
+      <img src="logo.png" alt="Saiyacore Logo" /><span>Saiyacore</span>
+    </a>
+    <nav class="main-nav">
+      <a href="about.html">About</a>
+      <a href="services.html" class="active">Services</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ========== Hero (320 px band, looping video) ========== -->
+  <section class="services-hero">
+    <video class="hero-video" src="cloud-tech.mp4" autoplay muted loop playsinline></video>
+    <div class="hero-shade"></div>
+    <div class="hero-overlay">
+      <h1>End-to-End IT & Cloud Services</h1>
+      <p>Accelerating transformation across Cloud, DevOps, Automation and Observability.</p>
+    </div>
+  </section>
+
+  <!-- ========== 6 alternat­ing image/text blocks ========== -->
+  <section class="container services-section">
+    <!-- 1: image left -->
+    <div class="alt-block fade-up">
+      <div class="alt-img"><img src="cloud-services.png" alt="Cloud Platforms"></div>
+      <div class="alt-text">
+        <h2>Cloud Platforms</h2>
+        <p>Strategy, migration and optimisation for public, private & hybrid cloud.</p>
+        <ul>
+          <li>AWS Well-Architected</li><li>Azure Landing Zones</li><li>Google Cloud Foundations</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 2: image right -->
+    <div class="alt-block reverse fade-up">
+      <div class="alt-img"><img src="devops.png" alt="DevOps & IaC"></div>
+      <div class="alt-text">
+        <h2>DevOps & IaC</h2>
+        <p>Automated pipelines and immutable infrastructure.</p>
+        <ul>
+          <li>Terraform / CloudFormation</li><li>Jenkins / GitLab CI</li><li>Ansible / Packer</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 3 -->
+    <div class="alt-block fade-up">
+      <div class="alt-img"><img src="automation-tools.png" alt="Automation"></div>
+      <div class="alt-text">
+        <h2>Workflow Automation</h2>
+        <p>Streamline operations and remove toil.</p>
+        <ul>
+          <li>Azure Logic Apps</li><li>Power Automate</li><li>Serverless Orchestration</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 4 -->
+    <div class="alt-block reverse fade-up">
+      <div class="alt-img"><img src="observability.png" alt="Observability"></div>
+      <div class="alt-text">
+        <h2>Observability</h2>
+        <p>Full-stack visibility & AI-powered insights.</p>
+        <ul>
+          <li>Dynatrace & Datadog</li><li>ELK / OpenSearch</li><li>Prometheus / Grafana</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 5 -->
+    <div class="alt-block fade-up">
+      <div class="alt-img"><img src="security.png" alt="Security"></div>
+      <div class="alt-text">
+        <h2>Security & Compliance</h2>
+        <p>Protect workloads and meet regulatory standards.</p>
+        <ul>
+          <li>IAM & Zero Trust</li><li>KMS / Key Vault</li><li>DevSecOps Automation</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 6 -->
+    <div class="alt-block reverse fade-up">
+      <div class="alt-img"><img src="managed.png" alt="Managed Operations"></div>
+      <div class="alt-text">
+        <h2>Managed Operations</h2>
+        <p>24×7 monitoring and cost optimisation.</p>
+        <ul>
+          <li>SRE / Incident Response</li><li>FinOps Advisory</li><li>Backup & DR</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA strip ========== -->
+  <section class="cta-strip">
+    <h2>Need an end-to-end partner?</h2>
+    <a href="contact.html" class="btn-primary">Discuss Your Roadmap</a>
+  </section>
+
+  <!-- ========== Footer ========== -->
+  <footer class="site-footer"><p>&copy; 2022 Saiyacore Inc.</p></footer>
+
+  <!-- fade-in IntersectionObserver -->
+  <script src="scroll-anim.js" defer></script>
+</body>
+</html>

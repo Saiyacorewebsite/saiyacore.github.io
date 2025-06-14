@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact – Saiyacore</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a href="index.html" class="brand"><img src="logo.png" alt="Saiyacore" /><span>Saiyacore</span></a>
+    <nav class="main-nav">
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
+
+  <section class="page-banner contact-banner">
+    <h1>Let’s Connect</h1>
+    <p>Drop us a line—our consultants will respond within 24 hours.</p>
+  </section>
+
+  <main class="container page-content fade-up">
+    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="contact-form">
+      <input type="hidden" name="form-name" value="contact" />
+      <p class="hidden"><label>Don’t fill this out if you’re human: <input name="bot-field" /></label></p>
+
+      <label>Name*
+        <input type="text" name="name" required />
+      </label>
+
+      <label>Email*
+        <input type="email" name="email" required />
+      </label>
+
+      <label>Company
+        <input type="text" name="company" />
+      </label>
+
+      <label>Message*
+        <textarea name="message" rows="5" required></textarea>
+      </label>
+
+      <button type="submit" class="btn-primary">Send Message</button>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2022 Saiyacore Inc.</p>
+  </footer>
+  <script src="scroll-anim.js" defer></script>
+</body>
+</html>
