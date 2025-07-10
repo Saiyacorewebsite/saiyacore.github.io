@@ -9,10 +9,16 @@
 <body>
 <header class="site-header">
   <a href="index.html" class="brand"><img src="logo.png" alt="Logo"><span>Saiyacore</span></a>
+ <!-- ① Hamburger button -->
+  <button class="menu-btn" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+
+  <!-- ② Nav links (unchanged list) -->
   <nav class="main-nav">
     <a href="about.html">About</a>
     <a href="services.html">Services</a>
-    <a href="blog.html" class="active">Blog</a>
+    <a href="blog.html">Blog</a>
     <a href="contact.html">Contact</a>
   </nav>
 </header>
@@ -101,5 +107,9 @@
 <!-- Footer -->
 <footer class="site-footer"><p>&copy; 2025 Saiyacore Inc.</p></footer>
 <script src="scroll-anim.js" defer></script>
+  <script>
+  document.querySelector('.menu-btn').onclick = () =>
+    document.querySelector('.main-nav').classList.toggle('open');
+</script>
 </body>
 </html>
