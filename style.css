@@ -19,6 +19,31 @@ img{max-width:100%;display:block;border-radius:4px;}
 .main-nav a{color:#fff;text-decoration:none;margin-left:var(--space-m);font-weight:500;transition:color .3s;}
 .main-nav a:hover,.main-nav .active{color:var(--accent);}
 
+/* ─── Mobile nav ------------------------------------------------ */
+.menu-btn{
+  display:none;           /* hidden on desktop */
+  flex-direction:column;gap:4px;
+  background:none;border:0;cursor:pointer;
+}
+.menu-btn span{
+  width:24px;height:3px;background:#fff;border-radius:2px;
+}
+
+/* hide links by default on mobile */
+@media (max-width:767px){
+  .menu-btn{display:flex;}              /* show hamburger */
+  .main-nav{
+    position:absolute;right:0;top:100%;
+    background:var(--navy);
+    width:100%;display:none;flex-direction:column;
+    text-align:center;padding:var(--space-s) 0;
+  }
+  .main-nav a{
+    margin:var(--space-xs) 0;           /* vertical list */
+  }
+  /* when .open is added → show menu */
+  .main-nav.open{display:flex;}
+}
 /* Hero */
 .hero{min-height:60vh;display:flex;align-items:center;justify-content:center;background-size:cover;background-position:center;position:relative;text-align:center;}
 .hero::after{content:"";position:absolute;inset:0;background:rgba(14,26,53,0.6);}
