@@ -13,6 +13,12 @@
 <!-- Header -->
 <header class="site-header">
   <a href="index.html" class="brand"><img src="logo.png" alt="Saiyacore Logo"><span>Saiyacore</span></a>
+  <!-- ① Hamburger button -->
+  <button class="menu-btn" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+
+  <!-- ② Nav links  -->
   <nav class="main-nav">
     <a href="about.html">About</a>
     <a href="services.html">Services</a>
@@ -25,7 +31,7 @@
 <section class="hero-split">
   <!-- background video -->
 <video class="hero-bg-video" src="flight-band.mp4" autoplay muted loop playsinline></video>
- <!-- dark overlay so text stays readable (optional) -->
+ <!-- dark overlay so text stays readable  -->
  <div class="hero-bg-shade"></div>
 
 
@@ -128,5 +134,9 @@
 <footer class="site-footer"><p>&copy; 2025 Saiyacore Inc.</p></footer>
 
 <script src="scroll-anim.js" defer></script>
+  <script>
+  document.querySelector('.menu-btn').onclick = () =>
+    document.querySelector('.main-nav').classList.toggle('open');
+</script>
 </body>
 </html>
