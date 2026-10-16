@@ -6,7 +6,7 @@
     <title>Services – Saiyacore</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body class="services-page">
     <a class="skip-link" href="#main-content">Skip to content</a>
     <!-- ========== Header ========== -->
     <header class="site-header">
@@ -32,130 +32,482 @@
       </nav>
     </header>
     <main id="main-content" tabindex="-1">
-      <!-- ========== Hero (320 px band, looping video) ========== -->
-      <section class="services-hero">
-        <video
-          class="hero-video"
-          src="cloud-tech.mp4"
-          autoplay
-          muted
-          loop
-          playsinline
-        ></video>
-        <div class="hero-shade"></div>
-        <div class="hero-overlay">
-          <h1>End-to-End IT & Cloud Services</h1>
+      <section class="services-intro wrapper">
+        <div class="services-intro-copy">
+          <p class="eyebrow">FROM AMBITION TO ARCHITECTURE</p>
+          <h1>Build bold.<br /><em>Operate brilliantly.</em></h1>
           <p>
-            Accelerating transformation across Cloud, DevOps, Automation and
-            Observability.
+            Cloud, delivery and operations that work together. Explore the
+            capabilities that move your platform forward.
+          </p>
+          <div class="hero-actions">
+            <a class="btn-primary" href="#capabilities"
+              >Explore services <span aria-hidden="true">↓</span></a
+            ><a class="text-link touch-link" href="contact.html"
+              >Let’s talk <span aria-hidden="true">↗</span></a
+            >
+          </div>
+        </div>
+        <div class="service-map" aria-hidden="true">
+          <span class="map-kicker">YOUR CONNECTED ECOSYSTEM</span>
+          <div class="map-core">S<span>SAIYACORE</span></div>
+          <span class="map-node node-cloud">Cloud</span
+          ><span class="map-node node-build">Build</span
+          ><span class="map-node node-secure">Secure</span
+          ><span class="map-node node-observe">Observe</span>
+          <div class="map-caption">STRATEGY → ENGINEERING → OPERATIONS</div>
+        </div>
+      </section>
+      <section
+        class="capability-section wrapper"
+        id="capabilities"
+        aria-labelledby="capability-heading"
+      >
+        <div class="capability-heading">
+          <div>
+            <p class="eyebrow">SIX CAPABILITIES. ONE CONNECTED APPROACH.</p>
+            <h2 id="capability-heading">Where do you want to go?</h2>
+          </div>
+          <p>
+            Tap a capability to explore. Each service includes practical next
+            steps and links to official technology resources.
           </p>
         </div>
+        <nav class="service-jumps" aria-label="Explore service capabilities">
+          <a href="#cloud"
+            ><span>01</span>Cloud Platforms<span aria-hidden="true">↘</span></a
+          ><a href="#devops"
+            ><span>02</span>DevOps & IaC<span aria-hidden="true">↘</span></a
+          ><a href="#automation"
+            ><span>03</span>Workflow Automation<span aria-hidden="true"
+              >↘</span
+            ></a
+          ><a href="#observability"
+            ><span>04</span>Observability<span aria-hidden="true">↘</span></a
+          ><a href="#security"
+            ><span>05</span>Security & Compliance<span aria-hidden="true"
+              >↘</span
+            ></a
+          ><a href="#operations"
+            ><span>06</span>Managed Operations<span aria-hidden="true"
+              >↘</span
+            ></a
+          >
+        </nav>
+        <div class="service-cards">
+          <article
+            class="service-card"
+            id="cloud"
+            aria-labelledby="cloud-heading"
+          >
+            <div class="service-card-visual visual-cloud">
+              <span class="service-number">01 / CLOUD PLATFORMS</span
+              ><img src="cloud-services.png" alt="" loading="lazy" /><span
+                class="service-visual-line"
+                aria-hidden="true"
+              ></span>
+            </div>
+            <div class="service-card-copy">
+              <p class="eyebrow">Cloud Platforms</p>
+              <h3 id="cloud-heading">Build a stronger foundation.</h3>
+              <p>
+                From your first landing zone to your next migration, create a
+                cloud foundation designed for security, resilience and growth.
+              </p>
+              <ul>
+                <li>Cloud strategy &amp; migration</li>
+                <li>Landing zones &amp; governance</li>
+                <li>Architecture &amp; cost optimisation</li>
+              </ul>
+              <div class="service-resources">
+                <h4>Explore the technology</h4>
+                <div class="resource-links">
+                  <a
+                    href="https://aws.amazon.com/architecture/well-architected/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >AWS Well-Architected <span aria-hidden="true">↗</span
+                    ><span class="visually-hidden">
+                      (opens in a new tab)</span
+                    ></a
+                  ><a
+                    href="https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Azure landing zones <span aria-hidden="true">↗</span
+                    ><span class="visually-hidden">
+                      (opens in a new tab)</span
+                    ></a
+                  ><a
+                    href="https://cloud.google.com/architecture"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Google Cloud architecture <span aria-hidden="true">↗</span
+                    ><span class="visually-hidden">
+                      (opens in a new tab)</span
+                    ></a
+                  >
+                </div>
+              </div>
+              <a
+                class="service-cta"
+                href="contact.html?service=Cloud%20Platforms"
+                >Plan your cloud journey <span aria-hidden="true">→</span></a
+              >
+            </div>
+          </article>
+          <article
+            class="service-card"
+            id="devops"
+            aria-labelledby="devops-heading"
+          >
+            <div class="service-card-visual visual-devops">
+              <span class="service-number">02 / DEVOPS &amp; IAC</span
+              ><img src="devops.png" alt="" loading="lazy" /><span
+                class="service-visual-line"
+                aria-hidden="true"
+              ></span>
+            </div>
+            <div class="service-card-copy">
+              <p class="eyebrow">DevOps &amp; IaC</p>
+              <h3 id="devops-heading">Ship with confidence.</h3>
+              <p>
+                Connect delivery pipelines and repeatable infrastructure so
+                teams can move from a change request to a release with less
+                friction.
+              </p>
+              <ul>
+                <li>Infrastructure as code</li>
+                <li>CI/CD &amp; release automation</li>
+                <li>Reusable platform templates</li>
+              </ul>
+              <div class="service-resources">
+                <h4>Explore the technology</h4>
+                <div class="resource-links">
+                  <a
+                    href="https://developer.hashicorp.com/terraform/docs"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Terraform <span aria-hidden="true">↗</span
+                    ><span class="visually-hidden">
+                      (opens in a new tab)</span
+                    ></a
+                  ><a
+                    href="https://docs.gitlab.com/ci/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >GitLab CI/CD <span aria-hidden="true">↗</span
+                    ><span class="visually-hidden">
+                      (opens in a new tab)</span
+                    ></a
+                  ><a
+                    href="https://docs.ansible.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Ansible <span aria-hidden="true">↗</span
+                    ><span class="visually-hidden">
+                      (opens in a new tab)</span
+                    ></a
+                  >
+                </div>
+              </div>
+              <a
+                class="service-cta"
+                href="contact.html?service=DevOps%20%26%20IaC"
+                >Improve your delivery pipeline
+                <span aria-hidden="true">→</span></a
+              >
+            </div>
+          </article>
+          <article
+            class="service-card"
+            id="automation"
+            aria-labelledby="automation-heading"
+          >
+            <div class="service-card-visual visual-automation">
+              <span class="service-number">03 / WORKFLOW AUTOMATION</span
+              ><img src="automation-tools.png" alt="" loading="lazy" /><span
+                class="service-visual-line"
+                aria-hidden="true"
+              ></span>
+            </div>
+            <div class="service-card-copy">
+              <p class="eyebrow">Workflow Automation</p>
+              <h3 id="automation-heading">Give your team its time back.</h3>
+              <p>
+                Connect systems, orchestrate workflows and turn repetitive
+                operational tasks into repeatable, observable processes.
+              </p>
+              <ul>
+                <li>Workflow discovery &amp; design</li>
+                <li>Event-driven integrations</li>
+                <li>Serverless orchestration</li>
+              </ul>
+              <div class="service-resources">
+                <h4>Explore the technology</h4>
+                <div class="resource-links">
+                  <a
+                    href="https://learn.microsoft.com/en-us/azure/logic-apps/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Azure Logic Apps <span aria-hidden="true">↗</span
+                    ><span class="visually-hidden">
+                      (opens in a new tab)</span
+                    ></a
+                  ><a
+                    href="https://learn.microsoft.com/en-us/power-automate/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Power Automate <span aria-hidden="true">↗</span
+                    ><span class="visually-hidden">
+                      (opens in a new tab)</span
+                    ></a
+                  ><a
+                    href="https://docs.aws.amazon.com/step-functions/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >AWS Step Functions <span aria-hidden="true">↗</span
+                    ><span class="visually-hidden">
+                      (opens in a new tab)</span
+                    ></a
+                  >
+                </div>
+              </div>
+              <a
+                class="service-cta"
+                href="contact.html?service=Workflow%20Automation"
+                >Explore your automation opportunities
+                <span aria-hidden="true">→</span></a
+              >
+            </div>
+          </article>
+          <article
+            class="service-card"
+            id="observability"
+            aria-labelledby="observability-heading"
+          >
+            <div class="service-card-visual visual-observability">
+              <span class="service-number">04 / OBSERVABILITY</span
+              ><img src="observability.png" alt="" loading="lazy" /><span
+                class="service-visual-line"
+                aria-hidden="true"
+              ></span>
+            </div>
+            <div class="service-card-copy">
+              <p class="eyebrow">Observability</p>
+              <h3 id="observability-heading">See the signal. Act sooner.</h3>
+              <p>
+                Bring metrics, logs and traces together to understand user
+                journeys, investigate incidents and improve service reliability.
+              </p>
+              <ul>
+                <li>Telemetry strategy &amp; instrumentation</li>
+                <li>Dashboards, alerts &amp; service health</li>
+                <li>Distributed tracing &amp; SLOs</li>
+              </ul>
+              <div class="service-resources">
+                <h4>Explore the technology</h4>
+                <div class="resource-links">
+                  <a
+                    href="https://opentelemetry.io/docs/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >OpenTelemetry <span aria-hidden="true">↗</span
+                    ><span class="visually-hidden">
+                      (opens in a new tab)</span
+                    ></a
+                  ><a
+                    href="https://docs.dynatrace.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Dynatrace <span aria-hidden="true">↗</span
+                    ><span class="visually-hidden">
+                      (opens in a new tab)</span
+                    ></a
+                  ><a
+                    href="https://grafana.com/docs/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Grafana <span aria-hidden="true">↗</span
+                    ><span class="visually-hidden">
+                      (opens in a new tab)</span
+                    ></a
+                  >
+                </div>
+              </div>
+              <a class="service-cta" href="contact.html?service=Observability"
+                >Build visibility into your platform
+                <span aria-hidden="true">→</span></a
+              >
+            </div>
+          </article>
+          <article
+            class="service-card"
+            id="security"
+            aria-labelledby="security-heading"
+          >
+            <div class="service-card-visual visual-security">
+              <span class="service-number">05 / SECURITY &amp; COMPLIANCE</span
+              ><img src="security.png" alt="" loading="lazy" /><span
+                class="service-visual-line"
+                aria-hidden="true"
+              ></span>
+            </div>
+            <div class="service-card-copy">
+              <p class="eyebrow">Security &amp; Compliance</p>
+              <h3 id="security-heading">
+                Make trust part of the architecture.
+              </h3>
+              <p>
+                Strengthen identities, protect workloads and embed security
+                checks into delivery, with controls aligned to your
+                requirements.
+              </p>
+              <ul>
+                <li>Identity &amp; access management</li>
+                <li>Secrets &amp; key management</li>
+                <li>DevSecOps &amp; policy automation</li>
+              </ul>
+              <div class="service-resources">
+                <h4>Explore the technology</h4>
+                <div class="resource-links">
+                  <a
+                    href="https://docs.aws.amazon.com/iam/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >AWS IAM <span aria-hidden="true">↗</span
+                    ><span class="visually-hidden">
+                      (opens in a new tab)</span
+                    ></a
+                  ><a
+                    href="https://learn.microsoft.com/en-us/security/zero-trust/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Microsoft Zero Trust <span aria-hidden="true">↗</span
+                    ><span class="visually-hidden">
+                      (opens in a new tab)</span
+                    ></a
+                  ><a
+                    href="https://trivy.dev/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Trivy <span aria-hidden="true">↗</span
+                    ><span class="visually-hidden">
+                      (opens in a new tab)</span
+                    ></a
+                  >
+                </div>
+              </div>
+              <a
+                class="service-cta"
+                href="contact.html?service=Security%20%26%20Compliance"
+                >Discuss your security priorities
+                <span aria-hidden="true">→</span></a
+              >
+            </div>
+          </article>
+          <article
+            class="service-card"
+            id="operations"
+            aria-labelledby="operations-heading"
+          >
+            <div class="service-card-visual visual-operations">
+              <span class="service-number">06 / MANAGED OPERATIONS</span
+              ><img src="managed.png" alt="" loading="lazy" /><span
+                class="service-visual-line"
+                aria-hidden="true"
+              ></span>
+            </div>
+            <div class="service-card-copy">
+              <p class="eyebrow">Managed Operations</p>
+              <h3 id="operations-heading">Keep your platform moving.</h3>
+              <p>
+                Build operational resilience with monitoring, incident response,
+                recovery planning and a clearer view of cloud spending.
+              </p>
+              <ul>
+                <li>Monitoring &amp; incident response</li>
+                <li>FinOps &amp; capacity optimisation</li>
+                <li>Backup &amp; disaster recovery</li>
+              </ul>
+              <div class="service-resources">
+                <h4>Explore the technology</h4>
+                <div class="resource-links">
+                  <a
+                    href="https://sre.google/books/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Google SRE <span aria-hidden="true">↗</span
+                    ><span class="visually-hidden">
+                      (opens in a new tab)</span
+                    ></a
+                  ><a
+                    href="https://www.finops.org/framework/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >FinOps Framework <span aria-hidden="true">↗</span
+                    ><span class="visually-hidden">
+                      (opens in a new tab)</span
+                    ></a
+                  ><a
+                    href="https://aws.amazon.com/architecture/resilience/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >AWS resilience <span aria-hidden="true">↗</span
+                    ><span class="visually-hidden">
+                      (opens in a new tab)</span
+                    ></a
+                  >
+                </div>
+              </div>
+              <a
+                class="service-cta"
+                href="contact.html?service=Managed%20Operations"
+                >Talk about your operations <span aria-hidden="true">→</span></a
+              >
+            </div>
+          </article>
+        </div>
       </section>
-
-      <!-- ========== 6 alternat­ing image/text blocks ========== -->
-      <section class="container services-section">
-        <!-- 1: image left -->
-        <div class="alt-block fade-up">
-          <div class="alt-img">
-            <img src="cloud-services.png" alt="Cloud Platforms" />
-          </div>
-          <div class="alt-text">
-            <h2>Cloud Platforms</h2>
+      <section
+        class="delivery-section wrapper"
+        aria-labelledby="delivery-heading"
+      >
+        <p class="eyebrow">HOW WE WORK TOGETHER</p>
+        <h2 id="delivery-heading">A clear path from idea to impact.</h2>
+        <div class="delivery-steps">
+          <div>
+            <span>01 / DISCOVER</span>
+            <h3>Understand your world.</h3>
             <p>
-              Strategy, migration and optimisation for public, private & hybrid
-              cloud.
+              Align on your goals, platform constraints and the outcomes that
+              matter.
             </p>
-            <ul>
-              <li>AWS Well-Architected</li>
-              <li>Azure Landing Zones</li>
-              <li>Google Cloud Foundations</li>
-            </ul>
           </div>
-        </div>
-
-        <!-- 2: image right -->
-        <div class="alt-block reverse fade-up">
-          <div class="alt-img"><img src="devops.png" alt="DevOps & IaC" /></div>
-          <div class="alt-text">
-            <h2>DevOps & IaC</h2>
-            <p>Automated pipelines and immutable infrastructure.</p>
-            <ul>
-              <li>Terraform / CloudFormation</li>
-              <li>Jenkins / GitLab CI</li>
-              <li>Ansible / Packer</li>
-            </ul>
+          <div>
+            <span>02 / BUILD</span>
+            <h3>Make the next move.</h3>
+            <p>Design and implement a practical roadmap with your team.</p>
           </div>
-        </div>
-
-        <!-- 3 -->
-        <div class="alt-block fade-up">
-          <div class="alt-img">
-            <img src="automation-tools.png" alt="Automation" />
-          </div>
-          <div class="alt-text">
-            <h2>Workflow Automation</h2>
-            <p>Streamline operations and remove toil.</p>
-            <ul>
-              <li>Azure Logic Apps</li>
-              <li>Power Automate</li>
-              <li>Serverless Orchestration</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- 4 -->
-        <div class="alt-block reverse fade-up">
-          <div class="alt-img">
-            <img src="observability.png" alt="Observability" />
-          </div>
-          <div class="alt-text">
-            <h2>Observability</h2>
-            <p>Full-stack visibility & AI-powered insights.</p>
-            <ul>
-              <li>Dynatrace & Datadog</li>
-              <li>ELK / OpenSearch</li>
-              <li>Prometheus / Grafana</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- 5 -->
-        <div class="alt-block fade-up">
-          <div class="alt-img"><img src="security.png" alt="Security" /></div>
-          <div class="alt-text">
-            <h2>Security & Compliance</h2>
-            <p>Protect workloads and meet regulatory standards.</p>
-            <ul>
-              <li>IAM & Zero Trust</li>
-              <li>KMS / Key Vault</li>
-              <li>DevSecOps Automation</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- 6 -->
-        <div class="alt-block reverse fade-up">
-          <div class="alt-img">
-            <img src="managed.png" alt="Managed Operations" />
-          </div>
-          <div class="alt-text">
-            <h2>Managed Operations</h2>
-            <p>24×7 monitoring and cost optimisation.</p>
-            <ul>
-              <li>SRE / Incident Response</li>
-              <li>FinOps Advisory</li>
-              <li>Backup & DR</li>
-            </ul>
+          <div>
+            <span>03 / EVOLVE</span>
+            <h3>Keep getting better.</h3>
+            <p>
+              Review reliability, delivery and operational feedback to guide
+              improvements.
+            </p>
           </div>
         </div>
       </section>
-
-      <!-- ========== CTA strip ========== -->
       <section class="cta-strip">
-        <h2>Need an end-to-end partner?</h2>
-        <a href="contact.html" class="btn-primary">Discuss Your Roadmap</a>
+        <p class="eyebrow">LET’S CONNECT THE DOTS</p>
+        <h2>Your next chapter starts<br />with a conversation.</h2>
+        <a href="contact.html" class="btn-primary"
+          >Discuss your roadmap <span aria-hidden="true">↗</span></a
+        ><a class="service-bottom-link" href="blog.html"
+          >Explore ideas in Tech Pulse →</a
+        >
       </section>
-
       <!-- ========== Footer ========== -->
     </main>
     <footer class="site-footer">
@@ -164,5 +516,6 @@
 
     <!-- fade-in IntersectionObserver -->
     <script src="scroll-anim.js" defer></script>
+    <script src="enquiry-chat.js" defer></script>
   </body>
 </html>

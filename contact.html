@@ -40,14 +40,17 @@
         <form
           name="contact"
           method="POST"
-          data-netlify="true"
-          netlify-honeypot="bot-field"
+          action="https://formsubmit.co/santoshhr992@gmail.com"
           class="contact-form"
         >
-          <input type="hidden" name="form-name" value="contact" />
+          <input
+            type="hidden"
+            name="_subject"
+            value="New Saiyacore contact enquiry"
+          /><input type="hidden" name="_template" value="table" />
           <p class="hidden">
             <label
-              >Don’t fill this out if you’re human: <input name="bot-field"
+              >Don’t fill this out if you’re human: <input name="_honey"
             /></label>
           </p>
 
@@ -62,6 +65,17 @@
           </label>
 
           <label
+            >What can we help with?<select name="service">
+              <option value="">Choose a service (optional)</option>
+              <option>Cloud Platforms</option>
+              <option>DevOps &amp; IaC</option>
+              <option>Workflow Automation</option>
+              <option>Observability</option>
+              <option>Security &amp; Compliance</option>
+              <option>Managed Operations</option>
+            </select></label
+          >
+          <label
             >Company
             <input type="text" name="company" />
           </label>
@@ -71,6 +85,29 @@
             <textarea name="message" rows="5" required></textarea>
           </label>
 
+          <label class="contact-consent"
+            ><input
+              type="checkbox"
+              name="consent"
+              value="Agreed to FormSubmit processing and enquiry follow-up"
+              required
+            /><span
+              >I agree to send these details through FormSubmit to Saiyacore and
+              be contacted about this enquiry.</span
+            ></label
+          >
+          <p class="contact-routing">
+            FormSubmit forwards this enquiry to
+            <a href="mailto:santoshhr992@gmail.com">santoshhr992@gmail.com</a>.
+            You may be asked to verify you’re human. Please don’t include
+            credentials or confidential information.
+            <a
+              href="https://formsubmit.co/privacy.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              >FormSubmit privacy policy</a
+            >.
+          </p>
           <button type="submit" class="btn-primary">Send Message</button>
         </form>
       </div>
@@ -79,5 +116,6 @@
       <p>&copy; 2026 Saiyacore Inc. <span>Cloud. Connected. Ahead.</span></p>
     </footer>
     <script src="scroll-anim.js" defer></script>
+    <script src="enquiry-chat.js" defer></script>
   </body>
 </html>

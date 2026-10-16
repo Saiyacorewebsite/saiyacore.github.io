@@ -48,3 +48,16 @@ if (
     .forEach((element) => observer.observe(element));
   document.documentElement.classList.add("motion-enabled");
 }
+
+// Keep service enquiries connected to the capability the visitor selected.
+const serviceSelect = document.querySelector('select[name="service"]');
+if (serviceSelect) {
+  const requestedService = new URLSearchParams(location.search).get("service");
+  if (
+    [...serviceSelect.options].some(
+      (option) => option.value === requestedService,
+    )
+  ) {
+    serviceSelect.value = requestedService;
+  }
+}
