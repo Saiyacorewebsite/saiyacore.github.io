@@ -1714,3 +1714,423 @@ select:focus-visible {
   text-decoration: underline;
   overflow-wrap: anywhere;
 }
+
+/* About: a people-led story with a connected visual identity. */
+.about-intro {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 36px;
+  align-items: center;
+  padding-block: 80px;
+}
+.about-intro h1 {
+  font-size: clamp(3.2rem, 5.5vw, 5.5rem);
+  font-weight: 500;
+}
+.about-intro h1 em,
+.about-manifesto h2 em {
+  font-style: normal;
+  color: var(--accent);
+}
+.about-intro-copy > p:not(.eyebrow) {
+  margin: 28px 0 32px;
+  max-width: 520px;
+  color: var(--muted);
+  font-size: 1.02rem;
+}
+.about-constellation {
+  position: relative;
+  aspect-ratio: 500/460;
+  width: 100%;
+}
+.about-constellation svg {
+  width: 100%;
+  height: 100%;
+}
+.constellation-core {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 26%;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid #b5eaff80;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 20%, #437fa3, #11213b 80%);
+  box-shadow: 0 0 60px #69b6ff22;
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: 300;
+  line-height: 1.2;
+}
+.constellation-core span {
+  font-size: 0.45rem;
+  letter-spacing: 0.15em;
+  color: var(--accent);
+}
+.constellation-label,
+.constellation-caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font: 0.56rem monospace;
+  letter-spacing: 0.18em;
+  color: var(--muted);
+}
+.constellation-caption {
+  top: auto;
+  bottom: 0;
+}
+.purpose-node {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  padding: 9px 18px;
+  border: 1px solid #8edbff40;
+  background: #102036;
+  border-radius: 6px;
+  color: #c5e7ff;
+  font-size: 0.75rem;
+}
+.purpose-people {
+  top: 17.4%;
+  left: 50%;
+}
+.purpose-platforms {
+  top: 65.2%;
+  left: 20%;
+}
+.purpose-progress {
+  top: 65.2%;
+  left: 80%;
+}
+.about-principles {
+  border-block: 1px solid var(--line);
+  background: #0d1726;
+}
+.about-principles > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding-block: 25px;
+}
+.about-principles span {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.6rem;
+  letter-spacing: 0.14em;
+  color: #b7cbe2;
+}
+.about-principles span:before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+.about-manifesto {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 65px;
+  padding-block: 85px;
+}
+.about-manifesto h2,
+.about-section-heading h2,
+.about-path h2 {
+  font-size: clamp(2rem, 3.3vw, 3.1rem);
+  font-weight: 500;
+}
+.manifesto-copy p {
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin-bottom: 18px;
+}
+.about-inline-link {
+  display: inline-flex;
+  gap: 16px;
+  align-items: center;
+  min-height: 48px;
+  padding-block: 12px;
+  color: var(--accent);
+  font-size: 0.83rem;
+}
+.about-inline-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+.about-inline-link:active {
+  opacity: 0.7;
+}
+.about-perspectives {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+}
+.perspective-card {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: linear-gradient(130deg, #15243a, #0c1727);
+  border-radius: 16px;
+}
+.perspective-art {
+  height: 250px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:
+    radial-gradient(ellipse at 50% 75%, #326d9255, transparent 70%), #101e31;
+}
+.perspective-art:after {
+  content: "";
+  position: absolute;
+  inset: 25px;
+  border: 1px solid #8edbff18;
+  border-radius: 50%;
+  pointer-events: none;
+}
+.perspective-art img {
+  width: 185px;
+  height: 185px;
+  object-fit: contain;
+  border-radius: 16px;
+}
+.people-card .perspective-art {
+  background:
+    radial-gradient(ellipse at 50% 75%, #7b689b55, transparent 70%), #191d33;
+}
+.perspective-code {
+  position: absolute;
+  top: 20px;
+  left: 28px;
+  color: #bad5ec;
+  font: 0.6rem monospace;
+  letter-spacing: 0.12em;
+}
+.perspective-copy {
+  padding: 34px;
+}
+.perspective-copy .eyebrow {
+  margin-bottom: 18px;
+}
+.perspective-copy h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.perspective-copy > p:not(.eyebrow) {
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+.perspective-copy ul {
+  list-style: none;
+  display: grid;
+  gap: 10px;
+  margin: 25px 0 16px;
+  font-size: 0.83rem;
+  color: #c7d8e9;
+}
+.perspective-copy li:before {
+  content: "+";
+  color: var(--accent);
+  margin-right: 12px;
+}
+.about-values {
+  padding-block: 85px;
+}
+.about-section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 30px;
+  margin-bottom: 35px;
+}
+.about-section-heading > p {
+  max-width: 270px;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+.about-value-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+.about-value-grid article {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 30px;
+  background: linear-gradient(150deg, #142238, #0b1524);
+}
+.value-index {
+  font: 0.6rem monospace;
+  letter-spacing: 0.12em;
+  color: var(--muted);
+}
+.value-symbol {
+  font-family: "Segoe UI Symbol", sans-serif;
+  font-size: 3rem;
+  line-height: 1;
+  color: var(--accent);
+  margin: 30px 0;
+}
+.about-value-grid h3 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 18px;
+}
+.about-value-grid p {
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+.about-path {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 65px;
+  padding-block: 10px 80px;
+}
+.about-path .about-inline-link {
+  margin-top: 24px;
+}
+.partnership-steps {
+  list-style: none;
+}
+.partnership-steps li {
+  display: flex;
+  gap: 24px;
+  padding: 25px 0;
+  border-top: 1px solid var(--line);
+}
+.partnership-steps li > span {
+  color: var(--accent);
+  font: 0.75rem monospace;
+  padding-top: 3px;
+}
+.partnership-steps h3 {
+  font-size: 1.35rem;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+.partnership-steps p {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+.about-reading {
+  display: flex;
+  gap: 35px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 35px;
+  margin-bottom: 80px;
+  background:
+    radial-gradient(ellipse at 90% 50%, #28597844, transparent), #101d30;
+  border: 1px solid #8edbff30;
+  border-radius: 12px;
+}
+.about-reading .eyebrow {
+  margin-bottom: 15px;
+}
+.about-reading h2 {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.about-reading p:not(.eyebrow) {
+  color: var(--muted);
+  font-size: 0.88rem;
+  margin-top: 16px;
+}
+.about-reading .btn-secondary {
+  flex-shrink: 0;
+  min-height: 48px;
+}
+@media (max-width: 900px) {
+  .about-intro {
+    gap: 20px;
+  }
+  .about-manifesto,
+  .about-path {
+    gap: 35px;
+  }
+  .about-section-heading {
+    align-items: start;
+    flex-direction: column;
+  }
+  .about-section-heading > p {
+    max-width: none;
+  }
+  .perspective-copy,
+  .about-value-grid article {
+    padding: 25px;
+  }
+  .about-principles span {
+    font-size: 0.52rem;
+    letter-spacing: 0.08em;
+  }
+  .about-reading {
+    align-items: start;
+    flex-direction: column;
+  }
+}
+@media (max-width: 700px) {
+  .about-intro {
+    grid-template-columns: 1fr;
+    padding-block: 50px 35px;
+    gap: 35px;
+  }
+  .about-intro h1 {
+    font-size: clamp(3rem, 11vw, 4.5rem);
+  }
+  .about-constellation {
+    width: min(100%, 400px);
+    justify-self: center;
+  }
+  .constellation-core {
+    font-size: 3rem;
+  }
+  .about-principles > div {
+    flex-direction: column;
+    gap: 14px;
+  }
+  .about-principles span {
+    font-size: 0.6rem;
+  }
+  .about-manifesto,
+  .about-perspectives,
+  .about-value-grid,
+  .about-path {
+    grid-template-columns: 1fr;
+  }
+  .about-manifesto {
+    padding-block: 50px;
+    gap: 25px;
+  }
+  .about-values {
+    padding-block: 50px;
+  }
+  .about-path {
+    gap: 25px;
+    padding-bottom: 50px;
+  }
+  .perspective-art {
+    height: 230px;
+  }
+  .about-value-grid article {
+    position: relative;
+    padding: 28px;
+  }
+  .value-symbol {
+    margin-block: 22px;
+  }
+  .about-reading {
+    padding: 25px;
+    margin-bottom: 50px;
+  }
+  .purpose-node {
+    padding: 8px 12px;
+    font-size: 0.68rem;
+  }
+}
