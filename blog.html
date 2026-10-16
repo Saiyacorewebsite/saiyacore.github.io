@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blog – Saiyacore</title>
+    <title>Tech Pulse | AI, Cloud &amp; IT Insights – Saiyacore</title>
+    <meta
+      name="description"
+      content="Source-linked AI, cloud, security and platform engineering updates, with practical takeaways for modern IT teams. Curated by Saiyacore."
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -31,117 +35,309 @@
       </nav>
     </header>
     <main id="main-content" tabindex="-1">
-      <!-- Hero Banner -->
       <section class="blog-hero">
+        <p class="eyebrow">THE SIGNAL. BEYOND THE HYPE.</p>
         <h1>Tech Pulse</h1>
         <p>
-          Curated updates across Cloud, DevOps, Observability &amp; Security.
+          What’s moving in AI, cloud and modern IT — and what it means for the
+          teams building what’s next.
+        </p>
+        <p class="blog-updated">
+          Curated <time datetime="2026-10-16">October 16, 2026</time> · Official
+          sources. Practical takeaways.
         </p>
       </section>
-
-      <!-- Masonry-style grid -->
-      <section class="blog-grid wrapper">
-        <!-- Card 1 -->
-        <article class="blog-tile fade-up" id="aws-updates">
-          <a
-            href="https://aws.amazon.com/blogs/aws/aws-weekly-roundup-new-aws-heroes-amazon-q-developer-ec2-gpu-price-reduction-and-more-june-9-2025/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src="aws.jpg" alt="AWS update" />
-            <div class="tile-content">
-              <span class="tag aws">AWS</span>
-              <h2>AWS Weekly Roundup (Jun 9, 2025)</h2>
-              <p>Graviton4, Aurora DSQL GA, EC2 GPU price cuts & more.</p>
-            </div>
-          </a>
-        </article>
-
-        <!-- Card 2 -->
-        <article class="blog-tile fade-up" id="azure-updates">
-          <a
-            href="https://azure.microsoft.com/en-us/updates"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src="azure.jpg" alt="Azure update" />
-            <div class="tile-content">
-              <span class="tag azure">Azure</span>
-              <h2>Storage Mover GA: SMB ➜ Blob</h2>
+      <section class="blog-intro wrapper" aria-labelledby="reading-heading">
+        <div>
+          <p class="eyebrow">ON OUR RADAR</p>
+          <h2 id="reading-heading">Less noise.<br />More useful insight.</h2>
+        </div>
+        <p>
+          Explore agentic AI, infrastructure as code, platform engineering and
+          software security. Release cards link to the original project records;
+          explainers cover practical concepts. Dates refer to the linked release
+          records. This page is curated manually, not a live news feed.
+        </p>
+      </section>
+      <section
+        class="blog-grid wrapper"
+        aria-label="IT updates and practical explainers"
+      >
+        <article class="blog-tile fade-up" id="agentic-ai">
+          <img src="cloud.png" alt="" loading="lazy" />
+          <div class="tile-content">
+            <span class="tag">AI &amp; MCP</span>
+            <p class="article-meta">
+              Release spotlight ·
+              <time datetime="2026-07-28">Jul 28, 2026</time>
+            </p>
+            <h2>
+              <a
+                href="https://github.com/modelcontextprotocol/modelcontextprotocol/releases/tag/2026-07-28"
+                target="_blank"
+                rel="noopener noreferrer"
+                >AI agents need more than a prompt. They need a protocol.</a
+              >
+            </h2>
+            <p>
+              The MCP 2026-07-28 specification is a stable release. It provides
+              a shared protocol for connecting AI applications with tools and
+              context.
+            </p>
+            <div class="article-takeaway">
+              <h3>The practical move</h3>
               <p>
-                Natively migrate file shares to Azure Blob with zero downtime.
+                Start with a read-only integration. Review tool permissions and
+                approval boundaries before allowing an agent to change
+                production systems.
               </p>
             </div>
-          </a>
+            <a
+              class="article-source"
+              href="https://github.com/modelcontextprotocol/modelcontextprotocol/releases/tag/2026-07-28"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Read Model Context Protocol <span aria-hidden="true">↗</span
+              ><span class="visually-hidden"> (opens in a new tab)</span></a
+            >
+          </div>
         </article>
-
-        <!-- Card 3 -->
+        <article class="blog-tile fade-up" id="infrastructure">
+          <img src="automation-tools.png" alt="" loading="lazy" />
+          <div class="tile-content">
+            <span class="tag">Infrastructure as code</span>
+            <p class="article-meta">
+              Release spotlight ·
+              <time datetime="2026-09-30">Sep 30, 2026</time>
+            </p>
+            <h2>
+              <a
+                href="https://github.com/opentofu/opentofu/releases/tag/v1.13.0"
+                target="_blank"
+                rel="noopener noreferrer"
+                >OpenTofu 1.13: a sharper toolkit for infrastructure teams.</a
+              >
+            </h2>
+            <p>
+              OpenTofu 1.13 adds Windows ARM64 packages and functions that help
+              module authors reduce unknown values during planning. Built-in
+              linting and symbol libraries are experiments.
+            </p>
+            <div class="article-takeaway">
+              <h3>The practical move</h3>
+              <p>
+                Test existing modules in a sandbox and read the compatibility
+                notes. Keep experimental features out of critical workflows
+                until you have evaluated them.
+              </p>
+            </div>
+            <a
+              class="article-source"
+              href="https://github.com/opentofu/opentofu/releases/tag/v1.13.0"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Read OpenTofu <span aria-hidden="true">↗</span
+              ><span class="visually-hidden"> (opens in a new tab)</span></a
+            >
+          </div>
+        </article>
+        <article class="blog-tile fade-up" id="cloud-native">
+          <img src="cloud-services.png" alt="" loading="lazy" />
+          <div class="tile-content">
+            <span class="tag">Cloud native</span>
+            <p class="article-meta">
+              Release watch · <time datetime="2026-09-23">Sep 23, 2026</time>
+            </p>
+            <h2>
+              <a
+                href="https://github.com/kubernetes/kubernetes/releases/tag/v1.37.1"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Kubernetes: keep the upgrade conversation moving.</a
+              >
+            </h2>
+            <p>
+              Kubernetes v1.37.1 appears in the official release feed. The feed
+              also includes v1.38 alpha builds; those are prereleases, not
+              production upgrade recommendations.
+            </p>
+            <div class="article-takeaway">
+              <h3>The practical move</h3>
+              <p>
+                Check your managed provider’s supported versions, API removals,
+                add-ons and rollback plan before scheduling a cluster upgrade.
+              </p>
+            </div>
+            <a
+              class="article-source"
+              href="https://github.com/kubernetes/kubernetes/releases/tag/v1.37.1"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Read Kubernetes <span aria-hidden="true">↗</span
+              ><span class="visually-hidden"> (opens in a new tab)</span></a
+            >
+          </div>
+        </article>
+        <article class="blog-tile fade-up" id="security">
+          <img src="security.png" alt="" loading="lazy" />
+          <div class="tile-content">
+            <span class="tag">Security</span>
+            <p class="article-meta">
+              Release watch · <time datetime="2026-10-14">Oct 14, 2026</time>
+            </p>
+            <h2>
+              <a
+                href="https://github.com/aquasecurity/trivy/releases/tag/v0.76.0"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Trivy 0.76.0: put security scanning on your release radar.</a
+              >
+            </h2>
+            <p>
+              Trivy v0.76.0 is listed in the project’s official release feed.
+              Its release record links to the version’s highlights and
+              changelog.
+            </p>
+            <div class="article-takeaway">
+              <h3>The practical move</h3>
+              <p>
+                Review scanner updates with your pipeline owners, test the rules
+                against representative workloads and assign owners to findings
+                instead of collecting another dashboard.
+              </p>
+            </div>
+            <a
+              class="article-source"
+              href="https://github.com/aquasecurity/trivy/releases/tag/v0.76.0"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Read Aqua Security / Trivy <span aria-hidden="true">↗</span
+              ><span class="visually-hidden"> (opens in a new tab)</span></a
+            >
+          </div>
+        </article>
+        <article class="blog-tile fade-up" id="platform-engineering">
+          <img src="devops.png" alt="" loading="lazy" />
+          <div class="tile-content">
+            <span class="tag">Platform engineering</span>
+            <p class="article-meta">
+              Release spotlight ·
+              <time datetime="2026-09-29">Sep 29, 2026</time>
+            </p>
+            <h2>
+              <a
+                href="https://github.com/backstage/backstage/releases/tag/v1.55.3"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Your developer portal should remove friction.</a
+              >
+            </h2>
+            <p>
+              Backstage v1.55.3 fixes TechDocs generation for documented MkDocs
+              Markdown extension configurations. Documentation is part of the
+              developer experience, too.
+            </p>
+            <div class="article-takeaway">
+              <h3>The practical move</h3>
+              <p>
+                Start with service ownership, reliable documentation and one
+                repeatable deployment path. Measure whether developers can find
+                what they need.
+              </p>
+            </div>
+            <a
+              class="article-source"
+              href="https://github.com/backstage/backstage/releases/tag/v1.55.3"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Read Backstage <span aria-hidden="true">↗</span
+              ><span class="visually-hidden"> (opens in a new tab)</span></a
+            >
+          </div>
+        </article>
         <article class="blog-tile fade-up" id="observability">
-          <a
-            href="https://www.dynatrace.com/news/press-release/dynatrace-showcases-new-possibilities-innovation-perform-2025/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=500&q=60"
-              alt="Dynatrace"
-            />
-            <div class="tile-content">
-              <span class="tag observability">Observability</span>
-              <h2>Dynatrace Perform 2025 highlights</h2>
+          <img src="observability.png" alt="" loading="lazy" />
+          <div class="tile-content">
+            <span class="tag">Observability</span>
+            <p class="article-meta">
+              Practical explainer · Reviewed Oct 16, 2026
+            </p>
+            <h2>
+              <a
+                href="https://github.com/open-telemetry/opentelemetry.io/blob/main/content/en/docs/concepts/signals/traces.md"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Follow the request. Find the bottleneck.</a
+              >
+            </h2>
+            <p>
+              OpenTelemetry traces show the path of a request across an
+              application. Connected spans make it easier to investigate where
+              work happens across services.
+            </p>
+            <div class="article-takeaway">
+              <h3>The practical move</h3>
               <p>
-                Grail log analytics, Davis AI actions & more platform goodies.
+                Instrument a critical user journey, propagate trace context and
+                connect traces to logs. Review sampling and sensitive attributes
+                before exporting telemetry.
               </p>
             </div>
-          </a>
+            <a
+              class="article-source"
+              href="https://github.com/open-telemetry/opentelemetry.io/blob/main/content/en/docs/concepts/signals/traces.md"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Read OpenTelemetry documentation <span aria-hidden="true">↗</span
+              ><span class="visually-hidden"> (opens in a new tab)</span></a
+            >
+          </div>
         </article>
-
-        <!-- Card 4 -->
-        <article class="blog-tile fade-up">
-          <a
-            href="https://support.microsoft.com/en-us/topic/june-10-2025-kb5060526-os-build-20348-3807-4e9453c4-6602-48ea-b349-689cd66dfdb9"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src="patch.jpg" alt="Patch Tuesday" />
-            <div class="tile-content">
-              <span class="tag security">Security</span>
-              <h2>Windows Patch Tuesday (Jun 2025)</h2>
-              <p>Critical fixes for Secure Boot, RDP and Active Directory.</p>
+        <article class="blog-tile fade-up" id="pipeline-security">
+          <img src="automation.png" alt="" loading="lazy" />
+          <div class="tile-content">
+            <span class="tag">DevSecOps</span>
+            <p class="article-meta">
+              Security release · <time datetime="2026-10-14">Oct 14, 2026</time>
+            </p>
+            <h2>
+              <a
+                href="https://github.com/opentofu/opentofu/releases/tag/v1.12.8"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Your infrastructure toolchain needs patching, too.</a
+              >
+            </h2>
+            <p>
+              OpenTofu v1.12.8 addresses potential excessive CPU usage when
+              installing dependencies from an attacker-controlled HTTP/2 server
+              during tofu init. It also fixes a lifecycle destroy crash.
+            </p>
+            <div class="article-takeaway">
+              <h3>The practical move</h3>
+              <p>
+                If you maintain the 1.12 release line, review this patch and
+                your dependency sources. Consult the maintained release line’s
+                notes before choosing an upgrade target.
+              </p>
             </div>
-          </a>
+            <a
+              class="article-source"
+              href="https://github.com/opentofu/opentofu/releases/tag/v1.12.8"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Read OpenTofu <span aria-hidden="true">↗</span
+              ><span class="visually-hidden"> (opens in a new tab)</span></a
+            >
+          </div>
         </article>
-
-        <!-- Card 5 -->
-        <article class="blog-tile fade-up">
-          <a href="pgcron.jpg" target="_blank" rel="noopener noreferrer">
-            <img src="azure.jpg" alt="PostgreSQL" />
-            <div class="tile-content">
-              <span class="tag azure">Azure</span>
-              <h2>pg_cron arrives in Azure PostgreSQL 17</h2>
-              <p>Native scheduled jobs for Flexible Server (preview).</p>
-            </div>
-          </a>
-        </article>
-
-        <!-- Card 6 -->
-        <article class="blog-tile fade-up">
-          <a
-            href="https://docs.datadoghq.com/whats_new/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src="https://images.unsplash.com/photo-1556155092-8707de31f9c4?auto=format&fit=crop&w=500&q=60"
-              alt="Datadog DASH"
-            />
-            <div class="tile-content">
-              <span class="tag observability">Observability</span>
-              <h2>Datadog DASH 2025: recap</h2>
-              <p>WatchDog anomaly detection and unified pipeline previewed.</p>
-            </div>
-          </a>
-        </article>
+      </section>
+      <section class="cta-strip">
+        <p class="eyebrow">TURN INSIGHT INTO ACTION</p>
+        <h2>What’s next for your platform?</h2>
+        <a class="btn-primary" href="contact.html"
+          >Let’s map the next move <span aria-hidden="true">↗</span></a
+        >
       </section>
 
       <!-- Footer -->
