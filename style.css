@@ -252,69 +252,128 @@ h1 {
   justify-self: center;
   isolation: isolate;
 }
-.planet {
+/* A double helix wraps the Saiyacore monogram inside rotating orbital planes. */
+.dna-aura {
   position: absolute;
-  inset: 22%;
+  inset: 12%;
   border-radius: 50%;
-  background: radial-gradient(
-    circle at 30% 25%,
-    #75c4e8,
-    #224f77 38%,
-    #0a172d 70%
-  );
-  box-shadow:
-    inset -16px -16px 35px #020814,
-    0 0 80px #389fe530;
-  border: 1px solid #8edbff70;
-  display: grid;
-  place-items: center;
-  overflow: hidden;
+  background: radial-gradient(ellipse, #387ab747, transparent 68%);
+  box-shadow: 0 0 100px #517ad719;
 }
-.planet:after {
-  content: "";
+.dna-monogram {
   position: absolute;
   inset: 0;
-  background: repeating-linear-gradient(
-    0deg,
-    transparent 0 15px,
-    #8edbff19 16px 17px
-  );
-  border-radius: 50%;
-}
-.planet span {
-  font-size: 8rem;
+  display: grid;
+  place-items: center;
+  padding-bottom: 12px;
+  font-size: clamp(7rem, 17vw, 13rem);
   font-weight: 200;
-  color: #b3e8ff77;
-  transform: skew(-12deg);
+  font-style: italic;
+  color: #b3e8ff30;
+  text-shadow: 0 0 40px #70bfff40;
+}
+.dna-helix {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  transform: rotate(-18deg);
+  filter: drop-shadow(0 0 8px #73cbff55);
+}
+.dna-strand {
+  fill: none;
+  stroke: url(#dna-spectrum);
+  stroke-width: 2.8;
+  stroke-linecap: round;
+}
+.dna-rungs line {
+  stroke: #8edbff;
+  stroke-width: 1;
+  opacity: 0.36;
+}
+.dna-nodes circle {
+  fill: #c1efff;
 }
 .orbit {
   position: absolute;
   inset: 6%;
-  border: 1px solid #8edbff40;
+  border: 1px solid #8edbff55;
   border-radius: 50%;
-  transform: rotate(-30deg) scaleY(0.55);
+  --tilt: -30deg;
+  --flatten: 0.55;
+  transform: rotate(var(--tilt)) scaleY(var(--flatten));
   z-index: 2;
 }
 .orbit-two {
-  transform: rotate(45deg) scaleY(0.75);
+  --tilt: 45deg;
+  --flatten: 0.75;
   inset: 1%;
   border-style: dashed;
-  border-color: #8edbff26;
+  border-color: #a3b4ff44;
 }
 .orbit-three {
-  transform: rotate(100deg) scaleY(0.6);
+  --tilt: 100deg;
+  --flatten: 0.6;
   inset: 9%;
+  border-color: #b799ff55;
 }
-.orbit-one:after {
+.orbit:after {
   content: "";
   position: absolute;
   top: 15%;
   left: 12%;
-  width: 10px;
-  height: 10px;
+  width: 7px;
+  height: 7px;
   border-radius: 50%;
   background: #c3efff;
-  box-shadow: 0 0 20px #8edbff;
+  box-shadow: 0 0 18px #8edbff;
+}
+.orbit-two:after {
+  background: #bba1ff;
+  width: 5px;
+  height: 5px;
+}
+.dna-running .orbit {
+  animation: orbital-turn 28s linear infinite;
+}
+.dna-running .orbit-two {
+  animation-duration: 38s;
+  animation-direction: reverse;
+}
+.dna-running .orbit-three {
+  animation-duration: 46s;
+}
+.dna-paused .orbit {
+  animation-play-state: paused;
+}
+@keyframes orbital-turn {
+  from {
+    transform: rotate(var(--tilt)) scaleY(var(--flatten)) rotate(0deg);
+  }
+  to {
+    transform: rotate(var(--tilt)) scaleY(var(--flatten)) rotate(360deg);
+  }
+}
+.motion-toggle {
+  position: absolute;
+  right: 6vw;
+  bottom: 18px;
+  padding: 7px 12px;
+  background: #0d192b;
+  color: var(--muted);
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  font-size: 0.68rem;
+  cursor: pointer;
+  z-index: 4;
+}
+.motion-toggle:hover {
+  color: var(--accent);
+  border-color: #8edbff66;
+}
+.motion-toggle:disabled {
+  cursor: default;
 }
 .orbit-label {
   position: absolute;
@@ -752,9 +811,6 @@ h1 {
   }
   .testimonial-track {
     gap: 20px;
-  }
-  .orbital .planet span {
-    font-size: 5rem;
   }
 }
 @media (max-width: 700px) {
